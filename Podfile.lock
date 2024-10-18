@@ -1,0 +1,74 @@
+PODS:
+  - AFNetworking (3.0.4):
+    - AFNetworking/NSURLSession (= 3.0.4)
+    - AFNetworking/Reachability (= 3.0.4)
+    - AFNetworking/Security (= 3.0.4)
+    - AFNetworking/Serialization (= 3.0.4)
+    - AFNetworking/UIKit (= 3.0.4)
+  - AFNetworking/NSURLSession (3.0.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.0.4)
+  - AFNetworking/Security (3.0.4)
+  - AFNetworking/Serialization (3.0.4)
+  - AFNetworking/UIKit (3.0.4):
+    - AFNetworking/NSURLSession
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
+  - BDBOAuth1Manager (2.0.0):
+    - AFNetworking/NSURLSession (~> 3.0.0)
+  - Bolts/Tasks (1.9.1)
+  - KeychainAccess (4.2.2)
+  - MessageInputBar (0.4.1):
+    - MessageInputBar/Core (= 0.4.1)
+  - MessageInputBar/Core (0.4.1)
+  - OAuth2-Swift (1.2):
+    - Alamofire
+    - KeychainAccess
+    - SwiftyJSON
+  - Parse (1.19.3):
+    - Parse/Core (= 1.19.3)
+  - Parse/Core (1.19.3):
+    - Bolts/Tasks (= 1.9.1)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - AlamofireImage
+  - BDBOAuth1Manager
+  - KeychainAccess
+  - MessageInputBar
+  - OAuth2-Swift
+  - Parse
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - Alamofire
+    - AlamofireImage
+    - BDBOAuth1Manager
+    - Bolts
+    - KeychainAccess
+    - MessageInputBar
+    - OAuth2-Swift
+    - Parse
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  BDBOAuth1Manager: 92d17d06f8a648602962304cd2f35ae7394fa001
+  Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  MessageInputBar: e81c7535347f1f7b923de7080409a535a004b6e4
+  OAuth2-Swift: a1efa6b5815717ae4ed93a5d1fd18f58fd788640
+  Parse: 0abb63a0ff6fa34a3f64b81d595a294e2ece143a
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: e73fdbbca246ef249f576348a1b583d2fac70348
+
+COCOAPODS: 1.11.3

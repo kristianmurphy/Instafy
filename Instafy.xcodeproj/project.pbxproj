@@ -1,0 +1,801 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3224C0B22935233C00E98EE2 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3224C0B12935233C00E98EE2 /* ProfileCell.swift */; };
+		3236EC88292C5EB400880320 /* SpotifyAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3236EC87292C5EB400880320 /* SpotifyAPICaller.swift */; };
+		3236EC8E292D832500880320 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3236EC8D292D832500880320 /* PostCell.swift */; };
+		3299DED3293482F200D181C3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3299DED2293482F200D181C3 /* ProfileViewController.swift */; };
+		3299DED52934830100D181C3 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3299DED42934830100D181C3 /* ExploreViewController.swift */; };
+		3B9D9C5C629E17136ED54D3B /* Pods_Instafy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C01038BED3E2FE56390D998 /* Pods_Instafy.framework */; };
+		86FF3BA82923010700DC6415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF3BA72923010700DC6415 /* AppDelegate.swift */; };
+		86FF3BAA2923010700DC6415 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF3BA92923010700DC6415 /* SceneDelegate.swift */; };
+		86FF3BAF2923010700DC6415 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FF3BAD2923010700DC6415 /* Main.storyboard */; };
+		86FF3BB12923010800DC6415 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FF3BB02923010800DC6415 /* Assets.xcassets */; };
+		86FF3BB42923010800DC6415 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FF3BB22923010800DC6415 /* LaunchScreen.storyboard */; };
+		86FF3BBF2923010800DC6415 /* InstafyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF3BBE2923010800DC6415 /* InstafyTests.swift */; };
+		86FF3BC92923010800DC6415 /* InstafyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF3BC82923010800DC6415 /* InstafyUITests.swift */; };
+		86FF3BCB2923010800DC6415 /* InstafyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF3BCA2923010800DC6415 /* InstafyUITestsLaunchTests.swift */; };
+		A431EB617246E90A5469B26E /* Pods_InstafyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA317346415E483C4D517589 /* Pods_InstafyTests.framework */; };
+		A7E2D48EED8806E28D3915BA /* Pods_Instafy_InstafyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF8B60C55EDDCC06532C707 /* Pods_Instafy_InstafyUITests.framework */; };
+		B363D44C292DBE61009E1BF8 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B363D44B292DBE61009E1BF8 /* CommentCell.swift */; };
+		B363D44E292DBFEF009E1BF8 /* AddCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B363D44D292DBFEF009E1BF8 /* AddCommentCell.swift */; };
+		B381CC7F2923EFE70028520D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B381CC7E2923EFE70028520D /* LoginViewController.swift */; };
+		B381CC812923F01F0028520D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B381CC802923F01F0028520D /* FeedViewController.swift */; };
+		B381CC832923F0AF0028520D /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B381CC822923F0AF0028520D /* PostViewController.swift */; };
+		B3836991293D917C00957987 /* ProfileAlbumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3836990293D917C00957987 /* ProfileAlbumViewCell.swift */; };
+		B3836993293E6E1200957987 /* AlbumGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3836992293E6E1200957987 /* AlbumGridCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86FF3BBB2923010800DC6415 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86FF3B9C2923010700DC6415 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86FF3BA32923010700DC6415;
+			remoteInfo = Instafy;
+		};
+		86FF3BC52923010800DC6415 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86FF3B9C2923010700DC6415 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86FF3BA32923010700DC6415;
+			remoteInfo = Instafy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2DF7FAD130CC3EBCA09678BC /* Pods-Instafy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instafy.debug.xcconfig"; path = "Target Support Files/Pods-Instafy/Pods-Instafy.debug.xcconfig"; sourceTree = "<group>"; };
+		3224C0B12935233C00E98EE2 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		3236EC87292C5EB400880320 /* SpotifyAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAPICaller.swift; sourceTree = "<group>"; };
+		3236EC8D292D832500880320 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		3299DED2293482F200D181C3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3299DED42934830100D181C3 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		86FF3BA42923010700DC6415 /* Instafy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instafy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86FF3BA72923010700DC6415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		86FF3BA92923010700DC6415 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		86FF3BAE2923010700DC6415 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86FF3BB02923010800DC6415 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86FF3BB32923010800DC6415 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86FF3BB52923010800DC6415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86FF3BBA2923010800DC6415 /* InstafyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstafyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86FF3BBE2923010800DC6415 /* InstafyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafyTests.swift; sourceTree = "<group>"; };
+		86FF3BC42923010800DC6415 /* InstafyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstafyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86FF3BC82923010800DC6415 /* InstafyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafyUITests.swift; sourceTree = "<group>"; };
+		86FF3BCA2923010800DC6415 /* InstafyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9C01038BED3E2FE56390D998 /* Pods_Instafy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instafy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF8B60C55EDDCC06532C707 /* Pods_Instafy_InstafyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instafy_InstafyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B363D44B292DBE61009E1BF8 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		B363D44D292DBFEF009E1BF8 /* AddCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommentCell.swift; sourceTree = "<group>"; };
+		B381CC7E2923EFE70028520D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B381CC802923F01F0028520D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		B381CC822923F0AF0028520D /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		B3836990293D917C00957987 /* ProfileAlbumViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAlbumViewCell.swift; sourceTree = "<group>"; };
+		B3836992293E6E1200957987 /* AlbumGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumGridCell.swift; sourceTree = "<group>"; };
+		B3B79D4B8B2C51B934897B48 /* Pods-Instafy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instafy.release.xcconfig"; path = "Target Support Files/Pods-Instafy/Pods-Instafy.release.xcconfig"; sourceTree = "<group>"; };
+		BA317346415E483C4D517589 /* Pods_InstafyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstafyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42893FAC3BF148A4EB71C9C /* Pods-Instafy-InstafyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instafy-InstafyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Instafy-InstafyUITests/Pods-Instafy-InstafyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE76295C861C9F0275205C56 /* Pods-InstafyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstafyTests.debug.xcconfig"; path = "Target Support Files/Pods-InstafyTests/Pods-InstafyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2EE005C8FB7E4FC5FC99DD2 /* Pods-Instafy-InstafyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instafy-InstafyUITests.release.xcconfig"; path = "Target Support Files/Pods-Instafy-InstafyUITests/Pods-Instafy-InstafyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FB8850269416A6892132A563 /* Pods-InstafyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstafyTests.release.xcconfig"; path = "Target Support Files/Pods-InstafyTests/Pods-InstafyTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86FF3BA12923010700DC6415 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9D9C5C629E17136ED54D3B /* Pods_Instafy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FF3BB72923010800DC6415 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A431EB617246E90A5469B26E /* Pods_InstafyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FF3BC12923010800DC6415 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E2D48EED8806E28D3915BA /* Pods_Instafy_InstafyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17DC77A0773836407395D34A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C01038BED3E2FE56390D998 /* Pods_Instafy.framework */,
+				ADF8B60C55EDDCC06532C707 /* Pods_Instafy_InstafyUITests.framework */,
+				BA317346415E483C4D517589 /* Pods_InstafyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86FF3B9B2923010700DC6415 = {
+			isa = PBXGroup;
+			children = (
+				86FF3BA62923010700DC6415 /* Instafy */,
+				86FF3BBD2923010800DC6415 /* InstafyTests */,
+				86FF3BC72923010800DC6415 /* InstafyUITests */,
+				86FF3BA52923010700DC6415 /* Products */,
+				B26F8BB70800272E6461FD18 /* Pods */,
+				17DC77A0773836407395D34A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		86FF3BA52923010700DC6415 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86FF3BA42923010700DC6415 /* Instafy.app */,
+				86FF3BBA2923010800DC6415 /* InstafyTests.xctest */,
+				86FF3BC42923010800DC6415 /* InstafyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86FF3BA62923010700DC6415 /* Instafy */ = {
+			isa = PBXGroup;
+			children = (
+				86FF3BA72923010700DC6415 /* AppDelegate.swift */,
+				86FF3BA92923010700DC6415 /* SceneDelegate.swift */,
+				86FF3BAD2923010700DC6415 /* Main.storyboard */,
+				B3836990293D917C00957987 /* ProfileAlbumViewCell.swift */,
+				3299DED2293482F200D181C3 /* ProfileViewController.swift */,
+				3224C0B12935233C00E98EE2 /* ProfileCell.swift */,
+				3299DED42934830100D181C3 /* ExploreViewController.swift */,
+				B381CC822923F0AF0028520D /* PostViewController.swift */,
+				B381CC802923F01F0028520D /* FeedViewController.swift */,
+				86FF3BB02923010800DC6415 /* Assets.xcassets */,
+				86FF3BB22923010800DC6415 /* LaunchScreen.storyboard */,
+				86FF3BB52923010800DC6415 /* Info.plist */,
+				B363D44D292DBFEF009E1BF8 /* AddCommentCell.swift */,
+				B363D44B292DBE61009E1BF8 /* CommentCell.swift */,
+				B381CC7E2923EFE70028520D /* LoginViewController.swift */,
+				3236EC8D292D832500880320 /* PostCell.swift */,
+				3236EC87292C5EB400880320 /* SpotifyAPICaller.swift */,
+				B3836992293E6E1200957987 /* AlbumGridCell.swift */,
+			);
+			path = Instafy;
+			sourceTree = "<group>";
+		};
+		86FF3BBD2923010800DC6415 /* InstafyTests */ = {
+			isa = PBXGroup;
+			children = (
+				86FF3BBE2923010800DC6415 /* InstafyTests.swift */,
+			);
+			path = InstafyTests;
+			sourceTree = "<group>";
+		};
+		86FF3BC72923010800DC6415 /* InstafyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				86FF3BC82923010800DC6415 /* InstafyUITests.swift */,
+				86FF3BCA2923010800DC6415 /* InstafyUITestsLaunchTests.swift */,
+			);
+			path = InstafyUITests;
+			sourceTree = "<group>";
+		};
+		B26F8BB70800272E6461FD18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DF7FAD130CC3EBCA09678BC /* Pods-Instafy.debug.xcconfig */,
+				B3B79D4B8B2C51B934897B48 /* Pods-Instafy.release.xcconfig */,
+				C42893FAC3BF148A4EB71C9C /* Pods-Instafy-InstafyUITests.debug.xcconfig */,
+				D2EE005C8FB7E4FC5FC99DD2 /* Pods-Instafy-InstafyUITests.release.xcconfig */,
+				CE76295C861C9F0275205C56 /* Pods-InstafyTests.debug.xcconfig */,
+				FB8850269416A6892132A563 /* Pods-InstafyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86FF3BA32923010700DC6415 /* Instafy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86FF3BCE2923010800DC6415 /* Build configuration list for PBXNativeTarget "Instafy" */;
+			buildPhases = (
+				28F57FAF1EE15AC947C27402 /* [CP] Check Pods Manifest.lock */,
+				86FF3BA02923010700DC6415 /* Sources */,
+				86FF3BA12923010700DC6415 /* Frameworks */,
+				86FF3BA22923010700DC6415 /* Resources */,
+				8B609A194D31555F07AA5C1C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Instafy;
+			productName = Instafy;
+			productReference = 86FF3BA42923010700DC6415 /* Instafy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86FF3BB92923010800DC6415 /* InstafyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86FF3BD12923010800DC6415 /* Build configuration list for PBXNativeTarget "InstafyTests" */;
+			buildPhases = (
+				E7E892178AB14DCA1A0C8A74 /* [CP] Check Pods Manifest.lock */,
+				86FF3BB62923010800DC6415 /* Sources */,
+				86FF3BB72923010800DC6415 /* Frameworks */,
+				86FF3BB82923010800DC6415 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86FF3BBC2923010800DC6415 /* PBXTargetDependency */,
+			);
+			name = InstafyTests;
+			productName = InstafyTests;
+			productReference = 86FF3BBA2923010800DC6415 /* InstafyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		86FF3BC32923010800DC6415 /* InstafyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86FF3BD42923010800DC6415 /* Build configuration list for PBXNativeTarget "InstafyUITests" */;
+			buildPhases = (
+				D6F7BE006B693A83F57C7511 /* [CP] Check Pods Manifest.lock */,
+				86FF3BC02923010800DC6415 /* Sources */,
+				86FF3BC12923010800DC6415 /* Frameworks */,
+				86FF3BC22923010800DC6415 /* Resources */,
+				F9AF657A1880FE228D18D62F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86FF3BC62923010800DC6415 /* PBXTargetDependency */,
+			);
+			name = InstafyUITests;
+			productName = InstafyUITests;
+			productReference = 86FF3BC42923010800DC6415 /* InstafyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86FF3B9C2923010700DC6415 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					86FF3BA32923010700DC6415 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					86FF3BB92923010800DC6415 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 86FF3BA32923010700DC6415;
+					};
+					86FF3BC32923010800DC6415 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 86FF3BA32923010700DC6415;
+					};
+				};
+			};
+			buildConfigurationList = 86FF3B9F2923010700DC6415 /* Build configuration list for PBXProject "Instafy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86FF3B9B2923010700DC6415;
+			productRefGroup = 86FF3BA52923010700DC6415 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86FF3BA32923010700DC6415 /* Instafy */,
+				86FF3BB92923010800DC6415 /* InstafyTests */,
+				86FF3BC32923010800DC6415 /* InstafyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86FF3BA22923010700DC6415 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86FF3BB42923010800DC6415 /* LaunchScreen.storyboard in Resources */,
+				86FF3BB12923010800DC6415 /* Assets.xcassets in Resources */,
+				86FF3BAF2923010700DC6415 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FF3BB82923010800DC6415 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FF3BC22923010800DC6415 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28F57FAF1EE15AC947C27402 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instafy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B609A194D31555F07AA5C1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instafy/Pods-Instafy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instafy/Pods-Instafy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Instafy/Pods-Instafy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6F7BE006B693A83F57C7511 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instafy-InstafyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7E892178AB14DCA1A0C8A74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstafyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9AF657A1880FE228D18D62F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instafy-InstafyUITests/Pods-Instafy-InstafyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instafy-InstafyUITests/Pods-Instafy-InstafyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Instafy-InstafyUITests/Pods-Instafy-InstafyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86FF3BA02923010700DC6415 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B363D44E292DBFEF009E1BF8 /* AddCommentCell.swift in Sources */,
+				B381CC7F2923EFE70028520D /* LoginViewController.swift in Sources */,
+				3299DED3293482F200D181C3 /* ProfileViewController.swift in Sources */,
+				86FF3BA82923010700DC6415 /* AppDelegate.swift in Sources */,
+				3236EC88292C5EB400880320 /* SpotifyAPICaller.swift in Sources */,
+				B381CC812923F01F0028520D /* FeedViewController.swift in Sources */,
+				86FF3BAA2923010700DC6415 /* SceneDelegate.swift in Sources */,
+				B3836991293D917C00957987 /* ProfileAlbumViewCell.swift in Sources */,
+				3236EC8E292D832500880320 /* PostCell.swift in Sources */,
+				B381CC832923F0AF0028520D /* PostViewController.swift in Sources */,
+				3224C0B22935233C00E98EE2 /* ProfileCell.swift in Sources */,
+				3299DED52934830100D181C3 /* ExploreViewController.swift in Sources */,
+				B363D44C292DBE61009E1BF8 /* CommentCell.swift in Sources */,
+				B3836993293E6E1200957987 /* AlbumGridCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FF3BB62923010800DC6415 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86FF3BBF2923010800DC6415 /* InstafyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FF3BC02923010800DC6415 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86FF3BC92923010800DC6415 /* InstafyUITests.swift in Sources */,
+				86FF3BCB2923010800DC6415 /* InstafyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86FF3BBC2923010800DC6415 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86FF3BA32923010700DC6415 /* Instafy */;
+			targetProxy = 86FF3BBB2923010800DC6415 /* PBXContainerItemProxy */;
+		};
+		86FF3BC62923010800DC6415 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86FF3BA32923010700DC6415 /* Instafy */;
+			targetProxy = 86FF3BC52923010800DC6415 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		86FF3BAD2923010700DC6415 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86FF3BAE2923010700DC6415 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		86FF3BB22923010800DC6415 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86FF3BB32923010800DC6415 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86FF3BCC2923010800DC6415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		86FF3BCD2923010800DC6415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86FF3BCF2923010800DC6415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DF7FAD130CC3EBCA09678BC /* Pods-Instafy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Instafy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coding.Instafy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		86FF3BD02923010800DC6415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3B79D4B8B2C51B934897B48 /* Pods-Instafy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Instafy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coding.Instafy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		86FF3BD22923010800DC6415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE76295C861C9F0275205C56 /* Pods-InstafyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coding.InstafyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Instafy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Instafy";
+			};
+			name = Debug;
+		};
+		86FF3BD32923010800DC6415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB8850269416A6892132A563 /* Pods-InstafyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coding.InstafyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Instafy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Instafy";
+			};
+			name = Release;
+		};
+		86FF3BD52923010800DC6415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42893FAC3BF148A4EB71C9C /* Pods-Instafy-InstafyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coding.InstafyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Instafy;
+			};
+			name = Debug;
+		};
+		86FF3BD62923010800DC6415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2EE005C8FB7E4FC5FC99DD2 /* Pods-Instafy-InstafyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coding.InstafyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Instafy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86FF3B9F2923010700DC6415 /* Build configuration list for PBXProject "Instafy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86FF3BCC2923010800DC6415 /* Debug */,
+				86FF3BCD2923010800DC6415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86FF3BCE2923010800DC6415 /* Build configuration list for PBXNativeTarget "Instafy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86FF3BCF2923010800DC6415 /* Debug */,
+				86FF3BD02923010800DC6415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86FF3BD12923010800DC6415 /* Build configuration list for PBXNativeTarget "InstafyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86FF3BD22923010800DC6415 /* Debug */,
+				86FF3BD32923010800DC6415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86FF3BD42923010800DC6415 /* Build configuration list for PBXNativeTarget "InstafyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86FF3BD52923010800DC6415 /* Debug */,
+				86FF3BD62923010800DC6415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86FF3B9C2923010700DC6415 /* Project object */;
+}
